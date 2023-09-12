@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Password Manager</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><h1>CipherX</h1></div>
+        <div class="navi">
+            <h3>Home</h3>
+            <h3>About</h3>
+            <h3>Contact</h3>
+        </div>
+    </div>
+    <div class="container">
+        <h1 id="tophead">Password Manager</h1>
+        <p><span style="color: rgb(209, 95, 95); font-size: 1.5rem; font-weight: 800;">CipherX</span> is your digital fortress for safeguarding and organizing your passwords. With state-of-the-art encryption, intuitive user interface, and seamless cross-platform compatibility, it ensures your online security is at its peak, so you can browse the web with confidence.</p>
+        <div class="passtable">
+            <h2>Your Passwords <span id="alert">(copied!)</span></h2>
+            <!-- <div class="yourpass">
+                <h4>Websites</h4>
+                <h4>Username</h4>
+                <h4>Password</h4>
+            </div> -->
+            <table class="yourpass">
+                <tr>
+                    <th>Websites</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Deletion</th>
+                </tr>
+                <!-- <tr>
+                    <td>xyz.com</td>
+                    <td>abc</td>
+                    <td>mno</td>
+                    <td>Delete</td>
+                </tr> -->
+                <!-- <tr>
+                    <td>ghi.com</td>
+                    <td>bkl</td>
+                    <td>123</td>
+                    <td>Delete</td>
+                </tr> -->
+            </table>
+        </div>
+        <div class="newpass">
+            <h2>Add a password</h2>
+            <div class="new">
+                <div>
+                    <label class="web" for="website">Website: </label>
+                    <input id="website" type="text" required>
+                </div>
+                <div>
+                    <label class="user" for="username">Username: </label>
+                    <input id="username" type="text" required>
+                </div>
+                <div>
+                    <label class="pass" for="password">Password: </label>
+                    <input id="password" type="password" required>
+                </div>
+                <br>
+                <button class="btn">submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

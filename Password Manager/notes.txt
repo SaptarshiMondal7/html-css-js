@@ -1,0 +1,10 @@
+If an element has an id, we can directly get the value of it juts by writing 'id.value' in the javascript. This reduces the task of defining the element in some other variable by using document.querySelector(), and then getting the value.
+
+Here, passObject is the key under which there is an object. The object is referred to as by storedPassword. 
+
+The logic here is to:
+    1. On clicking the 'submit' button  the website, username and password must get saved.
+    2. We will check if there is any saved password object in the localStorage by the line 'localStorage.getItem(key_name)'. 
+    3. If not then we will create first an array and then in that array we will push the new password object. Since the localStorage is a web storage mechanism that allows web applications to store data as key-value pairs in a web browser, all the data(password object) must be under the key 'passObject'(key_name).
+    4. Before storing the password object in the localStorage under the key passObject, the array needs to be converted to string by the line 'localStorage.setItem(`passObject`, JSON.stringify(passArray));'.
+    5. If there is an array from before hand then we will simply add more values to the array. But before that first parse the string value stored in the localStorage so that we get the object back by the line 'JSON.parse(localStorage.getItem(`passObject`))'.

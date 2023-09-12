@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.nav{
+    height: 75px;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 0px 50px;
+}
+
+.nav h1{
+    position: relative;
+    z-index: 1;
+}
+
+.nav h1::before{
+    content: "CipherX";
+    position: absolute;
+    left: -3px;
+    bottom: -3px;
+    color: rgb(209, 95, 95);
+    z-index: -1;
+}
+
+.nav .navi{
+    display: flex;
+    gap: 50px;
+}
+
+.nav .navi h3:hover{
+    color: rgb(209, 95, 95);
+    cursor: pointer;
+}
+
+.container{
+    position: absolute;
+    top: 100px;
+    padding: 0 250px;
+}
+
+.container #tophead{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.container p{
+    text-align: center;
+    margin-top: 35px;
+    font-size: 1.3rem;
+}
+
+.passtable h2{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
+.passtable .yourpass{
+    display: grid;
+    border: 2px solid ;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.yourpass tr{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 2px solid black;
+}
+
+.yourpass th{
+    border: 2px solid black;
+    font-size: 1.5rem;
+}
+
+.yourpass td{
+    border: 2px solid black;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.newpass h2{
+    margin-bottom: 35px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
+.newpass .new{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid; */
+}
+
+.user{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.pass{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.web{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+#website{
+    width: 350px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 35px;
+    font-size: 1.5rem;
+}
+
+#username{
+    width: 350px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 35px;
+    font-size: 1.5rem;
+}
+
+#password{
+    width: 350px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 35px;
+    font-size: 1.5rem;
+}
+
+.btn{
+    background-color: #333;
+    color: #fff;
+    padding: 5px 35px;
+    border-radius: 7px;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+
+.btns{
+    background-color: #333;
+    color: #fff;
+    padding: 5px 35px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#alert{
+    display: none;
+}
